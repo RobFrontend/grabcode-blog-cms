@@ -64,6 +64,8 @@ function Login({ isLogged, setIsLogged }) {
         <LoginButton size="large" variation="primary" disabled={isLogin}>
           Zaloguj
         </LoginButton>
+        <p>E-mail: robfrontdev@gmail.com</p>
+        <p>Hasło: 123456789</p>
       </Form>
     </LoginDiv>
   );
