@@ -8,11 +8,11 @@ export function useLogin() {
   const { mutate: login, isPending: isLogin } = useMutation({
     mutationFn: ({ email, password }) => loginAPI({ email, password }),
     onSuccess: (user) => {
-      toast.success("Logged in successfuly!");
+      toast.success("Pomyślnie zalogowano!");
       navigate("/panel");
     },
     onError: (err) => {
-      toast.error("Check your email or password!");
+      toast.error("Sprawdź e-mail oraz hasło!");
     },
   });
 
